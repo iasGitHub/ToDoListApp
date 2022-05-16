@@ -9,7 +9,7 @@ Le dossier du projet comporte trois fichiers :
   - un fichier style.css qui contient notre style et nous a permis d'avoir un rendu plus joli et plus adéquat par rapport à la charte graphique.
   - un fichier script.js qui nous sert d'interaction entre la partie frontEnd(index.html) et le backEnd (Localstorage)
 
-# Installations
+# Installation
 
 hors mis notre IDE (Visual studio), nous avons installé dans le dossier de l'application une extension live-server pour constater les changements en temps réel et ceci dans le terminal via la commande : --> npx live-server
 
