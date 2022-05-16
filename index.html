@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDoListApp | LocalStorage </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <main class="app">
+        <section class="greeting">
+            <h2 class="title">
+                Hello quoi de neuf ?<input type="text" id="name" placeholder=" Tapez ici votre pseudo">
+            </h2>
+        </section>
+
+        <section class="create-todo">
+            <h3>CREEZ VOTRE LISTE DE TÂCHES</h3>
+
+            <form id="new-todo-form">
+                <h4>Qu'avez vous prévu de faire cette semaine ?</h4>
+                <input
+                    type="text"
+                    name="content"
+                    id="content"
+                    placeholder="e.g. Monter en compétences sur Spring " />
+
+                <h4>Choisissez le niveau de priorité pour cette tâche </h4>
+                <div class="options">
+                    <label>
+                        <input
+                            type="radio"
+                            name="category"
+                            id="category1"
+                            value="faible"/>
+                            <span class="bubble faible"></span>
+                            <div>Faible</div>
+                    </label>
+                
+                    <label>
+                        <input
+                            type="radio"
+                            name="category"
+                            id="category2"
+                            value="moyen"/>
+                            <span class="bubble moyen"></span>
+                            <div>Moyenne</div>
+                    </label>
+
+                    <label>
+                        <input
+                            type="radio"
+                            name="category"
+                            id="category3"
+                            value="fort"/>
+                            <span class="bubble fort"></span>
+                            <div>Forte</div>
+                    </label>
+
+                </div>
+
+                <input type="submit" value="Ajouter la tâche" />
+            </form>
+        </section>
+
+        <section class="todo-list">
+            <h3>À FAIRE</h3>
+            <div class="list" id="todo-list">
+                <div class="todo-item">
+                    <label>
+                        <input type="checkbox" />
+                        <span class="bubble faible"></span>
+                    </label>
+
+                    <div class="todo-content">
+                        <input type="text" value="Make a video" readonly />
+                    </div>
+
+                    <div class="actions">
+                        <button class="edit">Modifier</button>
+                        <button class="delete">Suprimer</button>
+                    </div>
+                </div>
+
+                <div class="todo-item">
+                    <label>
+                        <input type="checkbox" />
+                        <span class="bubble moyen"></span>
+                    </label>
+
+                    <div class="todo-content">
+                        <input type="text" value="Organize a workshop" readonly />
+                    </div>
+
+                    <div class="actions">
+                        <button class="edit">Modifier</button>
+                        <button class="delete">Suprimer</button>
+                    </div>
+                </div>
+
+                <div class="todo-item">
+                    <label>
+                        <input type="checkbox" />
+                        <span class="bubble fort"></span>
+                    </label>
+
+                    <div class="todo-content">
+                        <input type="text" value="Play a soccer game" readonly />
+                    </div>
+
+                    <div class="actions">
+                        <button class="edit">Modifier</button>
+                        <button class="delete">Suprimer</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
